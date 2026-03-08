@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoFlash - Premium Flashlight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="glow-top" id="topGlow"></div>
+        
+        <header>
+            <div class="status-bar">
+                <span id="time">22:25</span>
+                <div class="battery-info">
+                    <span id="batteryPercent">--%</span>
+                    <div class="battery-icon">
+                        <div id="batteryLevel"></div>
+                    </div>
+                </div>
+            </div>
+            <h1>NEO<span>FLASH</span></h1>
+        </header>
+
+        <main>
+            <div class="flashlight-visual">
+                <div class="beam" id="beam"></div>
+            </div>
+
+            <div class="power-control">
+                <button id="powerBtn" class="power-btn">
+                    <div class="btn-inner">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.36 6.64001C19.6191 7.89949 20.4706 9.50244 20.806 11.2483C21.1415 12.9941 20.9459 14.8025 20.244 16.4423C19.542 18.0822 18.3644 19.4795 16.8592 20.4571C15.3541 21.4347 13.5882 21.9482 11.7854 21.9324C9.9827 21.9165 8.22301 21.3721 6.72856 20.3673C5.2341 19.3625 4.07221 17.9427 3.38959 16.2872C2.70697 14.6318 2.5332 12.8139 2.88989 11.0601C3.24659 9.30619 4.11794 7.69741 5.4 6.44001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="btn-glow"></div>
+                </button>
+                <p id="statusTxt">TAP TO TURN ON</p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="label">TEMP</span>
+                    <span class="value" id="tempVal">24°C</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="label">MODE</span>
+                    <span class="value">NORMAL</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
